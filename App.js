@@ -1,6 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native';
-
-
+import React from "react";
 import { NavigationContainer }  from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
@@ -9,6 +7,7 @@ import Prediagnosis from "./src/screens/Prediagnosis";
 
 const App = () => {
   const Stack = createStackNavigator();
+
   return (
     <NavigationContainer>
         <Stack.Navigator initialRouteName="prediagnosis">
@@ -23,7 +22,7 @@ const App = () => {
               name="calendar"
               component={Calendar}
               options={{
-                title: "Calendario"
+                title: "Citas"
               }}
             />
         </Stack.Navigator>
