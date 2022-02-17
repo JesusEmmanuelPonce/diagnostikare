@@ -12,8 +12,20 @@ const App = () => {
   return (
     <NavigationContainer>
         <Stack.Navigator initialRouteName="prediagnosis">
-            <Stack.Screen name="prediagnosis" component={Prediagnosis} />
-            <Stack.Screen name="calendar" component={Calendar} />
+            <Stack.Screen
+              name="prediagnosis"
+              component={Prediagnosis}
+              options={{
+                title: "Prediagnistico"
+              }}
+            />
+            <Stack.Screen
+              name="calendar"
+              component={Calendar}
+              options={{
+                title: "Calendario"
+              }}
+            />
         </Stack.Navigator>
     </NavigationContainer>
   );
